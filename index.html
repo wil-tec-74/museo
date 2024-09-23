@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Virtual de las Computadoras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de bienvenida elegante -->
+  <section id="welcome" class="d-flex justify-content-center align-items-center vh-100 text-white">
+    <div class="text-center">
+      <h1 class="fw-bold display-4">Bienvenido al Museo Virtual de la Carrera de Ingenieria infromatica
+      </h1>
+      <button class="btn btn-lg btn-outline-light mt-4" id="startBtn">Comenzar</button>
+    </div>
+  </section>
+
+  <!-- Página de las partes de la computadora -->
+  <section id="computer-parts" class="container my-5 d-none">
+    <h2 class="text-center text-uppercase text-dark mb-5">Museo de componeste</h2>
+    <div class="row g-4">
+      <!-- Cada parte de la computadora será un cuadro -->
+      <div class="col-12 col-md-4">
+        <div class="part-card text-center p-3"> 
+          <img src="placa.png" class="img-fluid" alt="Parte 1">
+          <h3 class="mt-3">Placa Madre</h3>
+          <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte1">Ver más</button>
+        </div>
+      </div>
+       <!-- Cada parte de la computadora será un cuadro -->
+       <div class="col-12 col-md-4">
+        <div class="part-card text-center p-3">
+          <img src="dis.png" class="img-fluid" alt="Parte 1">
+          <h3 class="mt-3">Disco Duro</h3>
+          <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte2">Ver más</button>
+        </div>
+      </div>
+       <!-- Cada parte de la computadora será un cuadro -->
+       <div class="col-12 col-md-4">
+        <div class="part-card text-center p-3">
+          <img src="ram.png" class="img-fluid" alt="Parte 1">
+          <h3 class="mt-3">Memoria Ram</h3>
+          <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte3">Ver más</button>
+        </div>
+      </div>
+      <!-- Repite el bloque anterior para más partes -->
+        <!-- Cada parte de la computadora será un cuadro -->
+        <div class="col-12 col-md-4">
+          <div class="part-card text-center p-3">
+            <img src="tel.png" class="img-fluid" alt="Parte 1">
+            <h3 class="mt-3">Telefono de ofivina</h3>
+            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte4">Ver más</button>
+          </div>
+        </div>
+        <!-- Repite el bloque anterior para más partes -->
+          <!-- Cada parte de la computadora será un cuadro -->
+       <div class="col-12 col-md-4">
+        <div class="part-card text-center p-3">
+          <img src="cd.png" class="img-fluid" alt="Parte 1">
+          <h3 class="mt-3"> Reproductor Portátil de Discos </h3>
+          <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte5">Ver más</button>
+        </div>
+      </div>
+      <!-- Repite el bloque anterior para más partes -->
+        <!-- Cada parte de la computadora será un cuadro -->
+        <div class="col-12 col-md-4">
+          <div class="part-card text-center p-3">
+            <img src="moni.png" class="img-fluid" alt="Parte 1">
+            <h3 class="mt-3">Monitor</h3>
+            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte6">Ver más</button>
+          </div>
+        </div>
+        <!-- Repite el bloque anterior para más partes -->
+          <!-- Cada parte de la computadora será un cuadro -->
+       <div class="col-12 col-md-4">
+        <div class="part-card text-center p-3">
+          <img src="tele.png" class="img-fluid" alt="Parte 1">
+          <h3 class="mt-3">Telefono</h3>
+          <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalParte7">Ver más</button>
+        </div>
+      </div>
+      <!-- Repite el bloque anterior para más partes -->
+
+      <!-- Modal para mostrar información de la parte -->
+      <div class="modal fade" id="modalParte1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel1">PLACA MADRE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+              <p class="me-3">La placa base, también conocida como tarjeta madre, placa madre o placa principal, es una tarjeta de circuito impreso a la que se conectan los componentes que constituyen la computadora.​​​​</p>
+              <img src="placa madre.png" alt="QR Code" class="img-fluid qr-code">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalParte2" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel1">DISCO DURO</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+              <p class="me-3">Un disco duro es una unidad de hardware que se usa para almacenar contenido y datos digitales en las computadoras. Todas las computadoras tienen un disco duro interno, pero también hay discos duros externos que pueden usarse para ampliar el almacenamiento de una computadora.​​</p>
+              <img src="dico.png" alt="QR Code" class="img-fluid qr-code">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalParte3" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel1">MEMORIA RAM</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <p class="me-3">La memoria de acceso aleatorio es una memoria de almacenaje a corto plazo. El sistema operativo de ordenadores u otros dispositivos utiliza la memoria RAM para guardar de forma temporal todos los programas y sus procesos de ejecución.​​​</p>
+            <img src="ram (1).png" alt="QR Code" class="img-fluid qr-code">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalParte4" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel1">TELEFONO DE OFICINA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <p class="me-3">​​Los teléfonos SIP de escritorio se utilizan para el trabajo en oficina, se registran a uno o múltiples conmutadores de tal manera que es una solución practica para telefonía en sucursales o trabajo remoto.</p>
+          <img src="telof.png" alt="QR Code" class="img-fluid qr-code">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalParte5" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel1">REPRODUCTOR PORTATIL DE DISCO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center">
+        <p class="me-3">Un reproductor de audio portátil es un dispositivo móvil que permite al usuario escuchar sonidos previamente grabados. Estos reproductores por lo general usan baterías como fuente de alimentación. Además, pueden usar distintos tipos de medios de almacenamiento, tanto analógicos como digitales.​​</p>
+        <img src="cd (1).png" alt="QR Code" class="img-fluid qr-code">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="modalParte6" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel1">MONITOR</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center">
+        <p class="me-3">Un monitor es un dispositivo de salida fundamental en las computadoras de escritorio, diseñado para visualizar gráficamente la información procesada por una computadora. Este dispositivo convierte los datos digitales en imágenes visuales, permitiendo al usuario interactuar y manipular la información presentada.​​</p>
+        <img src="moni (1).png" alt="QR Code" class="img-fluid qr-code">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="modalParte7" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel1" >TELEFONO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center">
+        <p class="me-3">​El teléfono es un dispositivo de telecomunicaciones que trasmite y recibe sonidos, normalmente la voz y que se ha venido utilizando desde su desarrollo para permitir la comunicación a distancia entre las personas. Es uno de los dispositivos electrónicos más extendidos en el mundo desarrollado.​</p>
+        <img src="telefono.png" alt="QR Code" class="img-fluid qr-code">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
